@@ -54,7 +54,7 @@ export default function Contact() {
           {/* WhatsApp Cards */}
           <div className="space-y-4">
             {/* WhatsApp Card 1 */}
-            <div className="p-6 rounded-[24px] border border-emerald-500/25 bg-emerald-950/10 backdrop-blur-md relative overflow-hidden flex flex-col space-y-4 shadow-[0_8px_32px_rgba(16,185,129,0.05)] hover:border-emerald-500/45 hover:shadow-[0_8px_32px_rgba(16,185,129,0.15)] transition-all duration-300 group">
+            <div className="p-6 rounded-[24px] border border-emerald-500/25 bg-[#050f0b]/95 relative overflow-hidden flex flex-col space-y-4 shadow-[0_8px_32px_rgba(16,185,129,0.05)] hover:border-emerald-500/45 hover:shadow-[0_8px_32px_rgba(16,185,129,0.15)] transition-all duration-300 group">
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl pointer-events-none group-hover:bg-emerald-500/10 transition-all" />
               
               <div className="flex items-center justify-between">
@@ -114,7 +114,7 @@ export default function Contact() {
             </div>
 
             {/* WhatsApp Card 2 */}
-            <div className="p-6 rounded-[24px] border border-emerald-500/25 bg-emerald-950/10 backdrop-blur-md relative overflow-hidden flex flex-col space-y-4 shadow-[0_8px_32px_rgba(16,185,129,0.05)] hover:border-emerald-500/45 hover:shadow-[0_8px_32px_rgba(16,185,129,0.15)] transition-all duration-300 group">
+            <div className="p-6 rounded-[24px] border border-emerald-500/25 bg-[#050f0b]/95 relative overflow-hidden flex flex-col space-y-4 shadow-[0_8px_32px_rgba(16,185,129,0.05)] hover:border-emerald-500/45 hover:shadow-[0_8px_32px_rgba(16,185,129,0.15)] transition-all duration-300 group">
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl pointer-events-none group-hover:bg-emerald-500/10 transition-all" />
               
               <div className="flex items-center justify-between">
@@ -176,7 +176,7 @@ export default function Contact() {
 
           {/* Email Card */}
           <div
-            className="p-6 rounded-3xl border border-indigo-950/40 bg-[#04040d]/70 backdrop-blur-md relative overflow-hidden shadow-xl transition-all duration-300 group text-left"
+            className="p-6 rounded-3xl border border-indigo-950/40 bg-[#04040d]/95 relative overflow-hidden shadow-xl transition-all duration-300 group text-left"
           >
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center space-x-3 text-indigo-400 font-semibold text-sm tracking-wider uppercase">

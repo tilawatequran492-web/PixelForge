@@ -43,10 +43,9 @@ function ServiceCard({ service, index }: { service: ServiceItem; index: number; 
   return (
     <motion.div
       ref={cardRef}
-      layout
-      initial={{ opacity: 0, y: 30 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-      transition={{ duration: 0.5, delay: index * 0.05 }}
+      initial={{ opacity: 0, y: 15 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+      transition={{ duration: 0.3, delay: Math.min(index * 0.03, 0.2) }}
       className="group relative flex flex-col p-6 rounded-3xl border border-indigo-950/40 glass-card glass-card-hover h-full justify-between"
     >
       {/* Accent Background Glow */}

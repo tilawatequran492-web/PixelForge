@@ -86,11 +86,11 @@ export default function Testimonials() {
           {reviews.map((review, idx) => (
             <motion.div
               key={review.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="p-8 rounded-[32px] border border-indigo-950/45 bg-[#050511]/70 backdrop-blur-md relative overflow-hidden flex flex-col justify-between hover:border-indigo-500/30 hover:scale-[1.01] transition-all duration-300 group"
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.35, delay: Math.min(idx * 0.04, 0.2) }}
+              className="p-8 rounded-[32px] border border-indigo-950/45 bg-[#050511]/95 relative overflow-hidden flex flex-col justify-between hover:border-indigo-500/30 transition-all duration-300 group"
             >
               {/* Giant glowing quote mark in back */}
               <Quote className="absolute right-6 top-6 w-16 h-16 text-indigo-500/5 group-hover:text-indigo-500/10 transition-colors duration-300 pointer-events-none" />

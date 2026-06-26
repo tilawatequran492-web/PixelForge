@@ -90,11 +90,11 @@ export default function WhyChooseUs() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="group p-6 rounded-3xl border border-indigo-950/45 bg-[#060613]/70 backdrop-blur-md hover:border-indigo-500/30 hover:shadow-[0_12px_24px_-8px_rgba(79,70,229,0.25)] transition-all duration-300 flex flex-col items-start text-left"
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.35, delay: Math.min(index * 0.04, 0.25) }}
+              className="group p-6 rounded-3xl border border-indigo-950/45 bg-[#060613]/95 hover:border-indigo-500/30 hover:shadow-[0_12px_24px_-8px_rgba(79,70,229,0.25)] transition-all duration-300 flex flex-col items-start text-left"
             >
               {/* Icon Container with glowing background */}
               <div className="w-10 h-10 rounded-xl bg-indigo-950/40 border border-indigo-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">

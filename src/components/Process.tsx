@@ -34,7 +34,7 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Container */}
-        <div className="p-8 sm:p-12 rounded-[40px] border border-indigo-950/45 bg-[#050510]/80 backdrop-blur-md relative overflow-hidden shadow-2xl">
+        <div className="p-8 sm:p-12 rounded-[40px] border border-indigo-950/45 bg-[#050510]/95 relative overflow-hidden shadow-2xl">
           {/* Subtle overlay lines */}
           <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 via-transparent to-purple-500/5 opacity-50" />
           
@@ -81,10 +81,10 @@ export default function Process() {
               {steps.map((step, idx) => (
                 <motion.div
                   key={step.title}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: idx * 0.1 }}
+                  initial={{ opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.35, delay: Math.min(idx * 0.05, 0.2) }}
                   className="p-6 rounded-3xl border border-indigo-950/40 bg-[#030309]/80 hover:border-indigo-500/35 transition-all duration-300 flex flex-col items-start text-left group"
                 >
                   <div className="w-12 h-12 rounded-2xl bg-indigo-950/60 border border-indigo-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">

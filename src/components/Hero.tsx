@@ -28,7 +28,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-indigo-950/45 border border-indigo-500/35 backdrop-blur-md shadow-lg shadow-indigo-500/5 text-indigo-300 font-medium text-xs sm:text-sm"
+              className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-indigo-950/95 border border-indigo-500/35 shadow-lg shadow-indigo-500/5 text-indigo-300 font-medium text-xs sm:text-sm"
             >
               <Calendar className="w-4 h-4 text-indigo-400" />
               <span>⭐ 6+ Years of Professional Experience</span>
@@ -93,7 +93,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="pt-6 w-full"
             >
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-3xl bg-indigo-950/10 border border-indigo-950/30 backdrop-blur-sm">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-3xl bg-indigo-950/80 border border-indigo-950/30">
                 <div className="text-left">
                   <div className="text-2xl sm:text-3xl font-display font-extrabold text-white">
                     <Counter end={1300} suffix="+" />
@@ -134,7 +134,7 @@ export default function Hero() {
           {/* Right Floating Character Image Column */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
             {/* Background glowing circle */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 sm:w-[450px] sm:h-[450px] rounded-full bg-gradient-to-tr from-purple-600/20 via-indigo-600/20 to-blue-500/20 blur-[60px] -z-10 animate-pulse" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 sm:w-[450px] sm:h-[450px] rounded-full bg-gradient-to-tr from-purple-600/20 via-indigo-600/20 to-blue-500/20 blur-[60px] -z-10 opacity-70" />
             
             {/* Floating character wrapper using custom .hero-image style */}
             <div className="hero-image relative z-10 flex items-center justify-center">

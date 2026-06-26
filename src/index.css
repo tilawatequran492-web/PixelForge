@@ -61,32 +61,30 @@ body {
   overflow-x: hidden;
 }
 
-/* Glassmorphism Classes */
+/* Glassmorphism Classes - Highly optimized for 60fps scrolling on all devices */
 .glass-card {
-  background: rgba(10, 10, 20, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(139, 92, 246, 0.15);
+  background: rgba(6, 6, 14, 0.93);
+  border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
 .glass-card-hover {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card-hover:hover {
-  background: rgba(15, 15, 30, 0.8);
-  border-color: rgba(59, 130, 246, 0.4);
-  box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
-  transform: translateY(-4px);
+  background: rgba(10, 10, 24, 0.97);
+  border-color: rgba(99, 102, 241, 0.45);
+  box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.25);
+  transform: translateY(-2px);
 }
 
-/* Neon Glow Effects */
+/* Neon Glow Effects - GPU Optimized */
 .neon-glow-purple {
-  box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 30px -10px rgba(139, 92, 246, 0.3);
 }
 
 .neon-glow-blue {
-  box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 30px -10px rgba(59, 130, 246, 0.3);
 }
 
 .glow-border {
@@ -99,31 +97,21 @@ body {
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(to bottom right, rgba(139, 92, 246, 0.4), rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.4));
+  background: linear-gradient(to bottom right, rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.08), rgba(139, 92, 246, 0.3));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
 }
 
-/* Premium Character floating and glow styling */
+/* Premium Character - GPU cached shadow layout (eliminates heavy render pass) */
 .hero-image img, .about-image img {
   width: 420px;
   max-width: 100%;
   border-radius: 20px;
   object-fit: cover;
-  filter: drop-shadow(0 0 40px rgba(147, 51, 234, 0.7));
-  animation: float 5s ease-in-out infinite;
+  box-shadow: 0 15px 50px -10px rgba(147, 51, 234, 0.45);
   will-change: transform;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
 }
 
 

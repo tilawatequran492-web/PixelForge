@@ -107,11 +107,7 @@ export default function Header() {
                   >
                     {item.name}
                     {isActive && (
-                      <motion.div
-                        layoutId="activeUnderline"
-                        className="absolute left-0 right-0 bottom-0 h-[2.5px] bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full shadow-[0_0_8px_rgba(99,102,241,0.6)]"
-                        transition={{ type: "spring", stiffness: 350, damping: 25 }}
-                      />
+                      <div className="absolute left-0 right-0 bottom-0 h-[2.5px] bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full shadow-[0_0_8px_rgba(99,102,241,0.6)]" />
                     )}
                   </a>
                 );
