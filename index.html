@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      // Patch window.fetch descriptor to support environments with read-only/getter-only fetch properties
+      try {
+        let currentFetch = window.fetch;
+        Object.defineProperty(window, 'fetch', {
+          configurable: true,
+          enumerable: true,
+          get() {
+            return currentFetch;
+          },
+          set(val) {
+            currentFetch = val;
+          }
+        });
+      } catch (e) {
+        console.warn("Unable to patch window.fetch:", e);
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://plain-eeur-prod-public.komododecks.com/202606/26/j5ApLNGoCxxn5nqtdNKZ/image.png" />
+    <title>PixelForge - Professional Digital Solutions</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

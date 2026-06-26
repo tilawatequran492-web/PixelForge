@@ -1,0 +1,6 @@
+{
+  "name": "PixelForge",
+  "description": "A premium, futuristic digital agency portfolio website for PixelForge featuring elegant glassmorphism, glowing gradients, and interactive animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

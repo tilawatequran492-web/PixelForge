@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Premium smooth font rendering and performance optimizations */
+html {
+  scroll-behavior: smooth;
+  background-color: #020205;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020205;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e1b4b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #312e81;
+}
+
+/* Premium typography helpers */
+.text-glow-purple {
+  text-shadow: 0 0 15px rgba(168, 85, 247, 0.4), 0 0 30px rgba(168, 85, 247, 0.15);
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.4), 0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+.heading-gradient-luxury {
+  background: linear-gradient(135deg, #ffffff 10%, #e2e8f0 50%, #94a3b8 150%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heading-gradient-neon {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Styles */
+body {
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: rgba(10, 10, 20, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(15, 15, 30, 0.8);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Neon Glow Effects */
+.neon-glow-purple {
+  box-shadow: 0 0 40px -10px rgba(139, 92, 246, 0.4);
+}
+
+.neon-glow-blue {
+  box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.4);
+}
+
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(to bottom right, rgba(139, 92, 246, 0.4), rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Premium Character floating and glow styling */
+.hero-image img, .about-image img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 40px rgba(147, 51, 234, 0.7));
+  animation: float 5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
